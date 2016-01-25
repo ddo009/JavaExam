@@ -24,17 +24,20 @@ public class ArrayListExam {
         // pic1.getWidth() : 가로길이
         // pic1.translate(x,y) ; x,y 만큼 그림 이동 (MOVE)
         // pic1.draw(); = 그림 출력
+        int result = 0;
 
-        System.out.println(picture1.getMaxX());
-        picture1.translate(picture2.getWidth() + 30, 0);
-        System.out.println(picture1.getMaxX());
-        picture1.draw();
-        picture2.draw();
-
-//      픽셀은 좌측 상단이 0.0
-        for (Picture pic : list) {
+        for (int i = 0; i < list.size(); i++) {
+            Picture pic = list.get(i);
+            System.out.println(list.get(i));
+            pic.translate(result, 0);
+            result += pic.getWidth() + 30;
             pic.draw();
         }
+
+//      픽셀은 좌측 상단이 0.0
+//        for (Picture pic : list) {
+//            pic.draw();
+//        }
 
 //        for (int i = 0; i < list.size(); i++) {
 //            Picture pic = list.get(i);
