@@ -32,9 +32,9 @@ public class ArrayListExam {
         picture2.draw();
 
 //      픽셀은 좌측 상단이 0.0
-//      for (Picture pic : list) {
-//          pic.draw();
-//      }
+        for (Picture pic : list) {
+            pic.draw();
+        }
 
 //        for (int i = 0; i < list.size(); i++) {
 //            Picture pic = list.get(i);
