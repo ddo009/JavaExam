@@ -24,6 +24,8 @@ public class ArrayListExam {
         // pic1.getWidth() : 가로길이
         // pic1.translate(x,y) ; x,y 만큼 그림 이동 (MOVE)
         // pic1.draw(); = 그림 출력
+
+        // 1번문제
         int result = 0;
 
         for (int i = 0; i < list.size(); i++) {
@@ -33,6 +35,61 @@ public class ArrayListExam {
             result += pic.getWidth() + 30;
             pic.draw();
         }
+
+
+        // 2번문제
+//        int sum = 0;
+//        for (int i = 0; i < list.size(); i++) {
+//            Picture pic = list.get(i);
+//            sum += pic.getWidth();
+//        }
+//        System.out.println(sum);
+//        // 가로길이 총합 685
+
+        // 3번문제
+//        int sum = 0;
+//        for (int i = 0; i < list.size(); i++) {
+//            Picture pic = list.get(i);
+//            if (pic.getWidth() < pic.getHeight()) {
+//                pic.translate(0, sum);
+//                sum += pic.getHeight() + 30;
+//                pic.draw();
+//            }
+//
+//        }
+
+        // 4번문제
+//        int sum = 0;
+//        for (int i = 0; i < list.size(); i++) {
+//            Picture pic = list.get(i);
+//            if (pic.getWidth() < pic.getHeight()) {
+//                sum++;
+//            }
+//        }
+//        System.out.println("세로 사진의 갯수는" + sum);
+
+        // 5번문제
+//        for (int i = 0 ; i < list.size(); i++){
+//            Picture pic = list.get(i);
+//            if (pic.getWidth() < pic.getHeight()){
+//                pic.draw();
+//                break;
+//            }
+//
+//        }
+
+        // 6번문제
+//        int sum = 0;
+//        ArrayList<Picture> matchs = new ArrayList<>();
+//        for (int i = 0 ; i < list.size(); i ++){
+//            Picture pic = list.get(i);
+//            if (pic.getWidth() < pic.getHeight()){
+//                matchs.add(pic);
+//            }
+//        }
+//        System.out.println(matchs.size());
+
+
 
 //      픽셀은 좌측 상단이 0.0
 //        for (Picture pic : list) {
