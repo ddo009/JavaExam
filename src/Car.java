@@ -1,7 +1,7 @@
 /**
  * A car shape that can be positioned anywhere on the screen.
  */
-public class Car implements Drawable, Runnable, Moveable {
+public class Car implements Drawable, Moveable {
     private int xLeft;
     private int yTop;
     Rectangle body;
@@ -50,10 +50,5 @@ public class Car implements Drawable, Runnable, Moveable {
         frontWindshield.translate(10, 0);
         roofTop.translate(10, 0);
         rearWindshield.translate(10, 0);
-    }
-
-    @Override
-    public void run(double distance) {
-
     }
 }
