@@ -4,6 +4,13 @@
 public class Car implements Drawable, Runnable, Moveable {
     private int xLeft;
     private int yTop;
+    Rectangle body = new Rectangle(xLeft, yTop + 10, 60, 10);
+    Ellipse frontTire = new Ellipse(xLeft + 10, yTop + 20, 10, 10);
+    Ellipse rearTire = new Ellipse(xLeft + 40, yTop + 20, 10, 10);
+
+    Line frontWindshield = new Line(xLeft + 10, yTop + 10, xLeft + 20, yTop);
+    Line roofTop = new Line(xLeft + 20, yTop, xLeft + 40, yTop);
+    Line rearWindshield = new Line(xLeft + 40, yTop, xLeft + 50, yTop + 10);
 
     /**
      * Constructs a car with a given top left corner.
@@ -20,14 +27,6 @@ public class Car implements Drawable, Runnable, Moveable {
      * Draws this car.
      */
     public void draw() {
-        Rectangle body = new Rectangle(xLeft, yTop + 10, 60, 10);
-        Ellipse frontTire = new Ellipse(xLeft + 10, yTop + 20, 10, 10);
-        Ellipse rearTire = new Ellipse(xLeft + 40, yTop + 20, 10, 10);
-
-        Line frontWindshield = new Line(xLeft + 10, yTop + 10, xLeft + 20, yTop);
-        Line roofTop = new Line(xLeft + 20, yTop, xLeft + 40, yTop);
-        Line rearWindshield = new Line(xLeft + 40, yTop, xLeft + 50, yTop + 10);
-
         body.draw();
         frontTire.fill();
         rearTire.fill();
@@ -38,7 +37,12 @@ public class Car implements Drawable, Runnable, Moveable {
 
     @Override
     public void move(int seconds) {
-
+        body.translate(10, 0);
+        frontTire.translate(10, 0);
+        rearTire.translate(10, 0);
+        frontWindshield.translate(10, 0);
+        roofTop.translate(10, 0);
+        rearWindshield.translate(10, 0);
     }
 
     @Override

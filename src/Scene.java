@@ -18,11 +18,17 @@ public class Scene {
         Ball ball = new Ball(400, 400, Color.RED);
         ball.draw();
 
+        Drawable grim;
         for (int i = 0; i < drawables.size(); i++) {
-            Drawable grim = drawables.get(i);
+            grim = drawables.get(i);
             grim.draw();
-
         }
 
+        for (int i = 0; i < 10; i++) {
+            if (drawables.get(i) instanceof Dog || drawables.get(i) instanceof Car) {
+
+                Canvas.snapshot();
+            }
+        }
     }
 }

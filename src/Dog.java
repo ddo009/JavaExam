@@ -17,6 +17,7 @@ public class Dog implements Drawable, Runnable, Moveable {
     @Override
     public void move(int seconds) {
         pic.translate(0, 1);
+        name.translate(0, 1);
     }
 
     @Override
