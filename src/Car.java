@@ -4,13 +4,13 @@
 public class Car implements Drawable, Runnable, Moveable {
     private int xLeft;
     private int yTop;
-    Rectangle body = new Rectangle(xLeft, yTop + 10, 60, 10);
-    Ellipse frontTire = new Ellipse(xLeft + 10, yTop + 20, 10, 10);
-    Ellipse rearTire = new Ellipse(xLeft + 40, yTop + 20, 10, 10);
-
+    Rectangle body;
+    Ellipse frontTire;
+    Ellipse rearTire;
     Line frontWindshield = new Line(xLeft + 10, yTop + 10, xLeft + 20, yTop);
     Line roofTop = new Line(xLeft + 20, yTop, xLeft + 40, yTop);
     Line rearWindshield = new Line(xLeft + 40, yTop, xLeft + 50, yTop + 10);
+
 
     /**
      * Constructs a car with a given top left corner.
@@ -21,6 +21,13 @@ public class Car implements Drawable, Runnable, Moveable {
     public Car(int x, int y) {
         xLeft = x;
         yTop = y;
+        body = new Rectangle(xLeft, yTop + 10, 60, 10);
+        frontTire = new Ellipse(xLeft + 10, yTop + 20, 10, 10);
+        rearTire = new Ellipse(xLeft + 40, yTop + 20, 10, 10);
+        frontWindshield = new Line(xLeft + 10, yTop + 10, xLeft + 20, yTop);
+        roofTop = new Line(xLeft + 20, yTop, xLeft + 40, yTop);
+        rearWindshield = new Line(xLeft + 40, yTop, xLeft + 50, yTop + 10);
+
     }
 
     /**

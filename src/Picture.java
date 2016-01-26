@@ -1,4 +1,5 @@
 //HIDE
+
 import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -32,7 +33,8 @@ public class Picture implements Shape {
 
     /**
      * Constructs a picture with a given width and height.
-     * @param width the desired width
+     *
+     * @param width  the desired width
      * @param height the desired height
      */
     public Picture(double width, double height) {
@@ -44,6 +46,7 @@ public class Picture implements Shape {
 
     /**
      * Constructs an image from a given file or URL.
+     *
      * @param source the filename or URL
      */
     public Picture(String source) {
@@ -75,6 +78,7 @@ public class Picture implements Shape {
 
     /**
      * Gets the leftmost x-position of the shape.
+     *
      * @return the leftmost x-position
      */
     public int getX() {
@@ -83,6 +87,7 @@ public class Picture implements Shape {
 
     /**
      * Gets the topmost y-position of the shape.
+     *
      * @return the topmost y-position
      */
     public int getY() {
@@ -91,6 +96,7 @@ public class Picture implements Shape {
 
     /**
      * Gets the rightmost x-position of the shape.
+     *
      * @return the rightmost x-position
      */
     public int getMaxX() {
@@ -99,6 +105,7 @@ public class Picture implements Shape {
 
     /**
      * Gets the bottommost y-position of the shape.
+     *
      * @return the bottommost y-position
      */
     public int getMaxY() {
@@ -123,6 +130,7 @@ public class Picture implements Shape {
 
     /**
      * The number of pixels in this picture.
+     *
      * @return the number of pixels
      */
     public int pixels() {
@@ -166,6 +174,7 @@ public class Picture implements Shape {
 
     /**
      * Gets the color of a pixel.
+     *
      * @param i the pixel index
      * @return the color at pixel i
      */
@@ -179,7 +188,8 @@ public class Picture implements Shape {
 
     /**
      * Sets the color of a pixel.
-     * @param i the pixel index
+     *
+     * @param i     the pixel index
      * @param color the new color for the pixel
      */
     public void setColorAt(int i, Color color) {
@@ -192,8 +202,9 @@ public class Picture implements Shape {
 
     /**
      * Gets the color of a pixel.
-     * @param x the x-coordinate (column) of the pixel
-     * @param y the y-coordinate (row) of the pixel
+     *
+     * @param x     the x-coordinate (column) of the pixel
+     * @param y     the y-coordinate (row) of the pixel
      * @param color the new color for the pixel
      */
     public Color getColorAt(int x, int y) {
@@ -207,8 +218,9 @@ public class Picture implements Shape {
 
     /**
      * Sets the color of a pixel.
-     * @param x the x-coordinate (column) of the pixel
-     * @param y the y-coordinate (row) of the pixel
+     *
+     * @param x   the x-coordinate (column) of the pixel
+     * @param y   the y-coordinate (row) of the pixel
      * @param the color of the pixel at the given row and column
      */
     public void setColorAt(int x, int y, Color color) {
@@ -222,6 +234,7 @@ public class Picture implements Shape {
 
     /**
      * Moves this picture by a given amount.
+     *
      * @param dx the amount by which to move in x-direction
      * @param dy the amount by which to move in y-direction
      */
@@ -233,6 +246,7 @@ public class Picture implements Shape {
 
     /**
      * Resizes this picture both horizontally and vertically.
+     *
      * @param dw the amount by which to resize the width on each side
      * @param dw the amount by which to resize the height on each side
      */
@@ -251,6 +265,7 @@ public class Picture implements Shape {
 
     /**
      * Draws this shape.
+     *
      * @param g2 the graphics context
      */
     public void paintShape(Graphics2D g2) {
