@@ -9,6 +9,7 @@ public class Dog implements Drawable, Runnable, Moveable {
                 file.substring(0, file.indexOf(".")));
     }
 
+    @Override
     public void draw() {
         pic.draw();
         name.draw();

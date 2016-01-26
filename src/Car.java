@@ -33,6 +33,7 @@ public class Car implements Drawable, Moveable {
     /**
      * Draws this car.
      */
+    @Override
     public void draw() {
         body.draw();
         frontTire.fill();
