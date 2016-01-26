@@ -26,15 +26,15 @@ public class ArrayListExam {
         // pic1.draw(); = 그림 출력
 
         // 1번문제
-        int result = 0;
-
-        for (int i = 0; i < list.size(); i++) {
-            Picture pic = list.get(i);
-            System.out.println(list.get(i));
-            pic.translate(result, 0);
-            result += pic.getWidth() + 30;
-            pic.draw();
-        }
+//        int result = 0;
+//
+//        for (int i = 0; i < list.size(); i++) {
+//            Picture pic = list.get(i);
+//            System.out.println(list.get(i));
+//            pic.translate(result, 0);
+//            result += pic.getWidth() + 30;
+//            pic.draw();
+//        }
 
 
         // 2번문제
@@ -75,20 +75,18 @@ public class ArrayListExam {
 //                pic.draw();
 //                break;
 //            }
-//
 //        }
 
-        // 6번문제
+        //  6번문제
 //        int sum = 0;
 //        ArrayList<Picture> matchs = new ArrayList<>();
-//        for (int i = 0 ; i < list.size(); i ++){
+//        for (int i = 0; i < list.size(); i++) {
 //            Picture pic = list.get(i);
-//            if (pic.getWidth() < pic.getHeight()){
+//            if (pic.getWidth() < pic.getHeight()) {
 //                matchs.add(pic);
 //            }
 //        }
 //        System.out.println(matchs.size());
-
 
 
 //      픽셀은 좌측 상단이 0.0
