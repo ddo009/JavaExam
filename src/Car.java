@@ -44,11 +44,11 @@ public class Car implements Drawable, Moveable {
 
     @Override
     public void move(int seconds) {
-        body.translate(10, 0);
-        frontTire.translate(10, 0);
-        rearTire.translate(10, 0);
-        frontWindshield.translate(10, 0);
-        roofTop.translate(10, 0);
-        rearWindshield.translate(10, 0);
+        body.translate(seconds * 10, 0);
+        frontTire.translate(seconds * 10, 0);
+        rearTire.translate(seconds * 10, 0);
+        frontWindshield.translate(seconds * 10, 0);
+        roofTop.translate(seconds * 10, 0);
+        rearWindshield.translate(seconds * 10, 0);
     }
 }
